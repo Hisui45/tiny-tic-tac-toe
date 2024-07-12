@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@700&display=swap');
+
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
+h5, h4{
+    text-align: center;
+}
+
+#timer{
+text-align: end;
+width: 175px;
+margin: auto;
+}
+
+#turn-message{
+    margin: 0;
+    text-align: center;
+}
+
+section{
+    padding: 12% 0;
+    margin: auto;
+    width: 50%;
+    
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    margin: auto;
+    width: 175px;
+}
+
+
+.box{
+    justify-self: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+
+.row-1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.row-2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.row-3{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.column-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+
+.column-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.column-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    
+}
+
+.options{
+    padding: 2%;
+    width: 175px;
+    margin: auto;
+}
+
+.button{
+    padding: 4px;
+    width: 175px;
+    font-family: inherit;
+    font-size: 1em;
+}

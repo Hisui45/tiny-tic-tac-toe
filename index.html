@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Tiny Tic-Tac-Toe</title>
+</head>
+<body onload="setGame()">
+    <section>
+        <h5>Tiny Tic-Tac-Toe</h5>
+        <h5 id="timer">0:00</h5>
+        <br>
+        <div class="board">
+            <div class="box row-1 column-1" onclick="placeMarker('box-1')"><p id="box-1"></p></div>
+            <div class="box row-1 column-2" onclick="placeMarker('box-2')"><p id="box-2"></p></div>
+            <div class="box row-1 column-3" onclick="placeMarker('box-3')"><p id="box-3"></p></div>
+            <div class="box row-2 column-1" onclick="placeMarker('box-4')"><p id="box-4"></p></div>
+            <div class="box row-2 column-2" onclick="placeMarker('box-5')"><p id="box-5"></p></div>
+            <div class="box row-2 column-3" onclick="placeMarker('box-6')"><p id="box-6"></p></div>
+            <div class="box row-3 column-1" onclick="placeMarker('box-7')"><p id="box-7"></p></div>
+            <div class="box row-3 column-2" onclick="placeMarker('box-8')"><p id="box-8"></p></div>
+            <div class="box row-3 column-3" onclick="placeMarker('box-9')"><p id="box-9"></p></div>
+          </div>
+          <br>
+          <h4 id="player-info">You're X</h4>
+          <p id="turn-message">Turn</p>
+        <form class="options">
+            <input type="radio" name="gameMode" value="0" onchange="selectOption(0)" checked>Player v Player</input>
+            <br>
+            <input type="radio" name="gameMode" value="1" onchange="selectOption(1)">Player v Computer</input>
+          </form>
+          <div class="options">
+            <input id="start-button" class="button" type="button" name="gameMode" value="Start" onclick="gameStart()">
+          </div>
+          
+          
+    </section>
+
+    
+</body>
+</html>
